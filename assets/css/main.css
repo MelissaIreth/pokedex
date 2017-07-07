@@ -20,8 +20,9 @@
 	color: black;
 	display: inline-block;
 	width: 40%;
-	height: 100px;
+	height: 180px;
 	padding: 5px;
+	cursor: pointer;
 }
 
 .pokeImg{
@@ -34,4 +35,20 @@
 	font-size: 1.5em;
 	text-transform: uppercase;
 	padding: 5px;
+}
+
+a.arrow{
+	font-size: 2em;
+	font-weight: 200;
+	color: black;
+}
+
+.pokemodal{
+	width: 100px;
+	height: 200px;
+}
+
+footer{
+	background-color: #f7ce1e;
+	padding: 20px;
 }
