@@ -3,7 +3,7 @@ $(document).ready(function(){
 		url: 'http://pokeapi.co/api/v2/pokemon/',
 		type: 'GET',
 		dataType: 'JSON',
-		data: {'limit': '20'},
+		data: {'limit': '811'},
 	})
 	.done(function(respuesta){
 		console.log(respuesta)
@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 	    data.forEach(function(e){
 	    	var pokeName = e.name;
-	    	$("#pokepoke").append("<div class='thepoke'><img class='pokeImg' src='http://img.pokemondb.net/artwork/"+ pokeName + ".jpg'><a class='modalpoke'>More info</a><span class='pname'>"+ pokeName +"</span></div> ");
+	    	$("#pokepoke").append("<div class='thepoke'><img class='pokeImg' src='http://img.pokemondb.net/artwork/"+ pokeName + ".jpg'><span class='pname'>"+ pokeName +"</span><a class='modalpoke'>More info</a></div> ");
 	    })
 	};
 
